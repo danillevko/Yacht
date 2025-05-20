@@ -1,0 +1,64 @@
+@import "./components/advantages";
+@import "./components/footer";
+@import "./components/form";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/recalls";
+@import "./components/rent";
+@import "./components/slider";
+@import "./utiles/mixin";
+@import "./utiles/placeholder";
+@import "./utiles/variables";
+
+.container {
+  margin: 0 auto;
+  width: 375px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin: 0;
+}
+
+.title-separate {
+  color: #BEC7C2;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #f6f5ef33;
+  opacity: 20%;
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    width: 698px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    width: 1216px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

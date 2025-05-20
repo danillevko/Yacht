@@ -4,12 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <title>Yacht</title>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="container container-header">
+            <div class="logo-wrapper">
+                <svg class="logo-icon">
+                    <use href="./img/symbols.svg#logo-icon"></use>
+                </svg>
+                <a href="./index.html" class="logo-title">Yacht Adventures</a>
+            </div>
+            <h6 class="burger-menu">0000</h6>
+            <ul class="header-list">
+                <li class="header-item"><a href="#" class="header-link">about</a></li>
+                <li class="header-item"><a href="#" class="header-link">yachts</a></li>
+                <li class="header-item"><a href="#" class="header-link">reviews</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="line"></div>
+    <main>
+        <section class="hero">
+            <div class="container conatiner-hero">
+                <div>
+                    <h1 class="hero-title">Explore the High Seas with Our Luxury Yacht Rentals</h1>
+                    <p class="hero-paragraph">Experience the freedom and luxury of yachting on the open seas. Choose from
+                        our
+                        top-of-the-line yachts and embark on an unforgettable journey surrounded by breathtaking views and
+                        state-of-the-art amenities.</p>
+                    <div class="hero-btn-wrapper">
+                        <button class="hero-btn btn-one">Get Started</button>
+                        <button class="hero-btn btn-two">Explore</button>
+                    </div>
+                </div>
+                <div class="hero-inner-container">
+                    <img src="./img/bg-hero (2).png" alt="" class="hero-bg-img">
+                    <div class="hero-human-wrapper">
+                        <svg class="darkman-icon hero-icon">
+                            <use href="./img/symbols.svg#human-icon"></use>
+                        </svg>
+                        <svg class="woman-icon hero-icon">
+                            <use href="./img/symbols.svg#human-icon"></use>
+                        </svg>
+                        <svg class="woman-icon hero-icon">
+                            <use href="./img/symbols.svg#human-icon"></use>
+                        </svg>
+                    </div>
+                    <h4 class="inner-title">Our Clients</h4>
+                    <img src="./img/hero-yacht.png" alt="" class="inner-yacht-img">
+                    <h2 class="inner-price">$12M</h2>
+                    <span class="inner-span">Book now and make your dream yacht rental a reality</span>
+                    <img src="./img/hero-man.png" alt="" class="inner-man-img">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 <script src="./script.js"></script>
