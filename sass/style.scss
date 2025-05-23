@@ -13,11 +13,15 @@
 .container {
   margin: 0 auto;
   width: 375px;
+  padding-inline-start: 0;
+  margin-block-end: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
+  padding-inline-start: 0;
+  margin-block-end: 0;
 }
 
 ul {
@@ -35,7 +39,7 @@ hr {
 }
 
 .title-separate {
-  color: #BEC7C2;
+  color: #bec7c2;
 }
 
 .line {
@@ -46,7 +50,7 @@ hr {
 }
 
 
-
+// TABLET
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .container {
     width: 698px;
@@ -54,7 +58,7 @@ hr {
     padding: 0;
   }
 }
-
+// DESKTOP
 @media screen and (min-width: 1025px) {
   .container {
     width: 1216px;

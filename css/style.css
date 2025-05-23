@@ -83,6 +83,19 @@
   background-color: #11131f;
 }
 
+.conatiner-hero {
+  position: relative;
+}
+
+.blur-hero {
+  width: 279px;
+  height: 279px;
+  position: absolute;
+  bottom: 108px;
+  right: 202px;
+  rotate: 45deg;
+}
+
 .hero-title {
   width: 332px;
   height: 120px;
@@ -391,7 +404,126 @@
     gap: 217px;
   }
 }
-.logo-title, .header-link, .hero-title, .hero-paragraph, .hero-btn, .inner-title, .inner-price, .inner-span {
+.rent {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #11131f;
+  color: white;
+}
+
+.rent-title {
+  width: 335px;
+  height: 145px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -4.5%;
+  margin-bottom: 40px;
+}
+
+.rent-list {
+  display: flex;
+  gap: 14px;
+  width: 335px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.rent-item-one {
+  width: 160px;
+  height: auto;
+}
+
+.rent-item-two {
+  width: 161px;
+  height: auto;
+}
+
+.rent-list-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -2%;
+  margin: 0;
+}
+
+.rent-img-one {
+  width: 335px;
+  height: 524px;
+  margin-bottom: 24px;
+}
+
+.rent-img-two {
+  width: 335px;
+  height: 289px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .rent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .rent-title {
+    width: 514px;
+    height: 152px;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .rent-list {
+    float: right;
+    text-align: left;
+    margin-bottom: 64px;
+    gap: 32px;
+  }
+  .rent-img-one {
+    width: 704px;
+    height: 631px;
+    margin-bottom: 32px;
+  }
+  .rent-img-two {
+    width: 308px;
+    height: 289px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .rent {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    position: relative;
+    height: 1549px;
+  }
+  .rent-title {
+    width: 514px;
+    height: 152px;
+    font-size: 32px;
+    margin: 0;
+  }
+  .rent-list {
+    float: right;
+    text-align: left;
+    gap: 32px;
+  }
+  .rent-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .rent-img-one {
+    position: absolute;
+    width: 533px;
+    height: 473px;
+    top: 470px;
+    left: 372px;
+    margin: 0;
+  }
+  .rent-img-two {
+    position: absolute;
+    width: 308px;
+    height: 289px;
+    top: 723px;
+    left: 32px;
+  }
+}
+.logo-title, .header-link, .hero-title, .hero-paragraph, .hero-btn, .inner-title, .inner-price, .inner-span, .rent-title, .rent-list-paragraph {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
 }
@@ -399,11 +531,15 @@
 .container {
   margin: 0 auto;
   width: 375px;
+  padding-inline-start: 0;
+  margin-block-end: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
+  padding-inline-start: 0;
+  margin-block-end: 0;
 }
 
 ul {
@@ -421,7 +557,7 @@ hr {
 }
 
 .title-separate {
-  color: #BEC7C2;
+  color: #bec7c2;
 }
 
 .line {
