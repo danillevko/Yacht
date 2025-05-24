@@ -52,6 +52,86 @@
   color: #c4cdff;
 }
 
+.burger-menu {
+  width: 44px;
+  height: 44px;
+  background-color: #11131f;
+  border: none;
+  border-radius: 12px;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 4px 0;
+  gap: 4px;
+}
+
+.menu-line {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.menu-overlay.active {
+  transform: translateX(0);
+}
+
+.menu-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #11131f;
+  z-index: 100;
+  transform: translateX(-100%);
+}
+
+.menu-header {
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #11131f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: relative;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-screen {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 50px;
+  height: 17px;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .burger-menu {
     display: none;
@@ -458,6 +538,45 @@
   height: 289px;
 }
 
+.rent-btn-wrapper {
+  width: 335px;
+  height: 325px;
+  position: relative;
+  margin-top: 24px;
+}
+
+.rent-img-three {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 260px;
+  height: 244px;
+}
+
+.rent-btn-title {
+  z-index: 100;
+  padding-top: 146px;
+  width: 312px;
+  margin: 0;
+  margin-bottom: 40px;
+  height: 120px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 110%;
+  color: white;
+}
+
+.rent-btn {
+  width: 131px;
+  height: 43px;
+  border-radius: 60px;
+  border: 1px white solid;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 110%;
+  background-color: #11131f;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .rent {
     padding-top: 50px;
@@ -523,16 +642,17 @@
     left: 32px;
   }
 }
-.logo-title, .header-link, .hero-title, .hero-paragraph, .hero-btn, .inner-title, .inner-price, .inner-span, .rent-title, .rent-list-paragraph {
+.logo-title, .header-link, .menu-item, .hero-title, .hero-paragraph, .hero-btn, .inner-title, .inner-price, .inner-span, .rent-title, .rent-list-paragraph, .rent-btn-title, .rent-btn {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
 }
 
 .container {
   margin: 0 auto;
-  width: 375px;
+  width: 335px;
   padding-inline-start: 0;
   margin-block-end: 0;
+  overflow: hidden;
 }
 
 body {

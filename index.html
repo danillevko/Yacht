@@ -14,88 +14,139 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container container-header">
-            <div class="logo-wrapper">
-                <svg class="logo-icon">
-                    <use href="./img/symbols.svg#logo-icon"></use>
-                </svg>
-                <a href="./index.html" class="logo-title">Yacht Adventures</a>
-            </div>
-            <h6 class="burger-menu">0000</h6>
-            <ul class="header-list">
-                <li class="header-item"><a href="#" class="header-link">about</a></li>
-                <li class="header-item"><a href="#" class="header-link">yachts</a></li>
-                <li class="header-item"><a href="#" class="header-link">reviews</a></li>
-            </ul>
+    <div class="mobile-screen">
+        <div class="main-page" id="mainPage">
+            <header class="header">
+                <div class="container container-header">
+                    <div class="logo-wrapper">
+                        <svg class="logo-icon">
+                            <use href="./img/symbols.svg#logo-icon"></use>
+                        </svg>
+                        <a href="./index.html" class="logo-title">Yacht Adventures</a>
+                    </div>
+                    <button class="burger-menu" id="hamburgerBtn" onclick="openMenu()">
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                    </button>
+                    <ul class="header-list">
+                        <li class="header-item"><a href="#" class="header-link">about</a></li>
+                        <li class="header-item"><a href="#" class="header-link">yachts</a></li>
+                        <li class="header-item"><a href="#" class="header-link">reviews</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="line"></div>
+            <main>
+                <section class="hero">
+                    <div class="container conatiner-hero">
+                        <div>
+                            <h1 class="hero-title">Explore the High Seas with Our Luxury Yacht Rentals</h1>
+                            <p class="hero-paragraph">Experience the freedom and luxury of yachting on the open seas.
+                                Choose
+                                from
+                                our
+                                top-of-the-line yachts and embark on an unforgettable journey surrounded by breathtaking
+                                views
+                                and
+                                state-of-the-art amenities.</p>
+                            <div class="hero-btn-wrapper">
+                                <button class="hero-btn btn-one">Get Started</button>
+                                <button class="hero-btn btn-two">Explore</button>
+                            </div>
+                        </div>
+                        <div class="hero-inner-container">
+                            <img src="./img/bg-hero (2).png" alt="" class="hero-bg-img">
+                            <div class="hero-human-wrapper">
+                                <svg class="darkman-icon hero-icon">
+                                    <use href="./img/symbols.svg#human-icon"></use>
+                                </svg>
+                                <svg class="woman-icon hero-icon">
+                                    <use href="./img/symbols.svg#human-icon"></use>
+                                </svg>
+                                <svg class="woman-icon hero-icon">
+                                    <use href="./img/symbols.svg#human-icon"></use>
+                                </svg>
+                            </div>
+                            <h4 class="inner-title">Our Clients</h4>
+                            <img src="./img/hero-yacht.png" alt="" class="inner-yacht-img">
+                            <h2 class="inner-price">$12M</h2>
+                            <span class="inner-span">Book now and make your dream yacht rental a reality</span>
+                            <img src="./img/hero-man.png" alt="" class="inner-man-img">
+                        </div>
+                        <div class="blur-hero"></div>
+                    </div>
+                </section>
+                <section class="rent">
+                    <div class="container rent-container">
+                        <p class="rent-title">Yacht Adventures fleet is here to take you on the ultimate adventure. Each
+                            yacht
+                            is
+                            hand-picked for its
+                            comfort, style, and performance.</p>
+                        <ul class="rent-list">
+                            <li class="rent-list-item rent-item-one">
+                                <p class="rent-list-paragraph">From spacious decks to state-of-the-art technology, our
+                                    yachts
+                                    are designed to provide the
+                                    perfect
+                                    blend of luxury and functionality. Take a look at our selection below and choose the
+                                    yacht
+                                    that
+                                    matches your needs and preferences.</p>
+                            </li>
+                            <li class="rent-list-item rent-item-two">
+                                <p class="rent-list-paragraph">No matter which yacht you choose, our experienced crew
+                                    will
+                                    ensure that your journey is smooth
+                                    and
+                                    enjoyable. Book now and get ready for an unforgettable adventure on the high seas.
+                                </p>
+                            </li>
+                        </ul>
+                        <img src="./img/rent-one.png" alt="" class="rent-img-one">
+                        <img src="./img/rent-two.png" alt="" class="rent-img-two">
+                        <div class="rent-btn-wrapper">
+                            <img src="./img/rent-btn-img.png" alt="" class="rent-img-three">
+                            <h3 class="rent-btn-title">Choose your dream yacht and sail away into the sunset</h3>
+                            <button type="button" class="rent-btn">Yacht rental</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-    </header>
-    <div class="line"></div>
-    <main>
-        <section class="hero">
-            <div class="container conatiner-hero">
-                <div>
-                    <h1 class="hero-title">Explore the High Seas with Our Luxury Yacht Rentals</h1>
-                    <p class="hero-paragraph">Experience the freedom and luxury of yachting on the open seas. Choose
-                        from
-                        our
-                        top-of-the-line yachts and embark on an unforgettable journey surrounded by breathtaking views
-                        and
-                        state-of-the-art amenities.</p>
-                    <div class="hero-btn-wrapper">
-                        <button class="hero-btn btn-one">Get Started</button>
-                        <button class="hero-btn btn-two">Explore</button>
-                    </div>
+    </div>
+
+
+    <!-- BURGERMENU -->
+
+    <div class="container">
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="menu-header">
+                <div class="menu-logo">
+                    <svg class="logo-icon">
+                        <use href="./img/symbols.svg#logo-icon"></use>
+                    </svg>
+                    <a href="./index.html" class="logo-title">Yacht Adventures</a>
                 </div>
-                <div class="hero-inner-container">
-                    <img src="./img/bg-hero (2).png" alt="" class="hero-bg-img">
-                    <div class="hero-human-wrapper">
-                        <svg class="darkman-icon hero-icon">
-                            <use href="./img/symbols.svg#human-icon"></use>
-                        </svg>
-                        <svg class="woman-icon hero-icon">
-                            <use href="./img/symbols.svg#human-icon"></use>
-                        </svg>
-                        <svg class="woman-icon hero-icon">
-                            <use href="./img/symbols.svg#human-icon"></use>
-                        </svg>
-                    </div>
-                    <h4 class="inner-title">Our Clients</h4>
-                    <img src="./img/hero-yacht.png" alt="" class="inner-yacht-img">
-                    <h2 class="inner-price">$12M</h2>
-                    <span class="inner-span">Book now and make your dream yacht rental a reality</span>
-                    <img src="./img/hero-man.png" alt="" class="inner-man-img">
-                </div>
-                <div class="blur-hero"></div>
+                <button class="close-btn" onclick="closeMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#F6F5EF" stroke-width="1.3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 6L18 18" stroke="#F6F5EF" stroke-width="1.3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
-        </section>
-        <section class="rent">
-            <div class="container rent-container">
-                <p class="rent-title">Yacht Adventures fleet is here to take you on the ultimate adventure. Each yacht
-                    is
-                    hand-picked for its
-                    comfort, style, and performance.</p>
-                <ul class="rent-list">
-                    <li class="rent-list-item rent-item-one">
-                        <p class="rent-list-paragraph">From spacious decks to state-of-the-art technology, our yachts
-                            are designed to provide the
-                            perfect
-                            blend of luxury and functionality. Take a look at our selection below and choose the yacht
-                            that
-                            matches your needs and preferences.</p>
-                    </li>
-                    <li class="rent-list-item rent-item-two">
-                        <p class="rent-list-paragraph">No matter which yacht you choose, our experienced crew will
-                            ensure that your journey is smooth
-                            and
-                            enjoyable. Book now and get ready for an unforgettable adventure on the high seas.</p>
-                    </li>
+            <div class="menu-content">
+                <ul class="menu-list">
+                    <li><a href="#" class="menu-item">about</a></li>
+                    <li><a href="#" class="menu-item">yachts</a></li>
+                    <li><a href="#" class="menu-item">reviews</a></li>
                 </ul>
-                <img src="./img/rent-one.png" alt="" class="rent-img-one">
-                <img src="./img/rent-two.png" alt="" class="rent-img-two">
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 </body>
 
 <script src="./script.js"></script>
