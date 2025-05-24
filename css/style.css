@@ -489,7 +489,6 @@
   .rent {
     padding-top: 80px;
     padding-bottom: 90px;
-    position: relative;
     height: 1549px;
   }
   .rent-title {
@@ -506,6 +505,7 @@
   .rent-container {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
   .rent-img-one {
     position: absolute;
