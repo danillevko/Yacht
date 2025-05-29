@@ -50,42 +50,85 @@
   width: 335px;
   height: 289px;
 }
-.rent-btn-wrapper{
+.rent-btn-wrapper {
   width: 335px;
-  height: 325px;
   position: relative;
   margin-top: 24px;
+  height: 355px;
 }
-.rent-img-three{
+.rent-img-three {
   position: absolute;
   right: 0;
   top: 0;
   width: 260px;
   height: 244px;
 }
-.rent-btn-title{
+.rent-btn-title {
   z-index: 100;
-  padding-top: 146px;
   width: 312px;
   margin: 0;
-  margin-bottom: 40px;
   height: 120px;
   @extend %font;
   font-weight: 500;
   font-size: 36px;
   line-height: 110%;
   color: white;
+  position: absolute;
+  top: 146px;
+  left: 0px;
 }
-.rent-btn{
+.rent-btn {
+  position: absolute;
   width: 131px;
   height: 43px;
   border-radius: 60px;
   border: 1px white solid;
-   @extend %font;
+  @extend %font;
   font-weight: 700;
   font-size: 14px;
   line-height: 110%;
   background-color: #11131f;
+  color: white;
+  bottom: 0px;
+  left: 0px;
+}
+.rent-btn:hover {
+  background-color: #181b2c;
+}
+.rent-img-three-destop {
+  display: none;
+}
+.rent-btn-title-desktop {
+  display: none;
+  z-index: 100;
+  @extend %font;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 110%;
+  color: white;
+}
+.rent-btn-desktop {
+  display: none;
+  border-radius: 60px;
+  border: 1px white solid;
+  @extend %font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 110%;
+  background-color: #11131f;
+  color: white;
+}
+// blur
+
+.bg-ellips {
+  position: absolute;
+  width: 285px;
+  height: 285px;
+  background-color: #91afba;
+  filter: blur(75px);
+  z-index: 5;
+  opacity: 0.6;
+  border-radius: 50%;
 }
 // TABLET
 
@@ -115,6 +158,44 @@
     width: 308px;
     height: 289px;
   }
+  .rent-btn-wrapper {
+    width: 698px;
+    height: 380px;
+  }
+  .rent-btn-title {
+    width: 641px;
+    height: 231px;
+    font-weight: 500;
+    font-size: 70px;
+    top: 30px;
+  }
+  .rent-btn {
+    width: 153px;
+    height: 48px;
+  }
+  .rent-img-three {
+    right: 72px;
+    top: -115px;
+  }
+  .bg-ellips {
+    position: absolute;
+    width: 399px;
+    height: 399px;
+    background-color: #91afba;
+    filter: blur(140px);
+    z-index: 5;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+  .rent-img-three-destop {
+    display: none;
+  }
+  .rent-btn-title-desktop {
+    display: none;
+  }
+  .rent-btn-desktop {
+    display: none;
+  }
 }
 
 // DESKTOP
@@ -123,8 +204,8 @@
   .rent {
     padding-top: 80px;
     padding-bottom: 90px;
-
     height: 1549px;
+    position: relative;
   }
   .rent-title {
     width: 514px;
@@ -136,6 +217,8 @@
     float: right;
     text-align: left;
     gap: 32px;
+    right: 0;
+    position: absolute;
   }
   .rent-container {
     display: flex;
@@ -146,7 +229,7 @@
     position: absolute;
     width: 533px;
     height: 473px;
-    top: 470px;
+    top: 306px;
     left: 372px;
     margin: 0;
   }
@@ -154,7 +237,58 @@
     position: absolute;
     width: 308px;
     height: 289px;
-    top: 723px;
+    top: 559px;
     left: 32px;
+  }
+  .rent-btn-wrapper {
+    height: 1385px;
+  }
+  .rent-img-three {
+    display: none;
+  }
+  .rent-btn-title {
+    display: none;
+  }
+  .rent-btn {
+    display: none;
+  }
+  .rent-img-three-destop {
+    display: block;
+    position: absolute;
+    width: 260px;
+    height: 244px;
+    top: 811px;
+    left: 372px;
+  }
+  .rent-btn-title-desktop {
+    display: block;
+    position: absolute;
+    width: 882px;
+    height: 370px;
+    font-size: 100px;
+    margin: 0;
+    bottom: 112px;
+    left: 199px;
+  }
+  .rent-btn-desktop {
+    display: block;
+    position: absolute;
+    width: 153px;
+    height: 48px;
+    margin: 0;
+    left: 199px;
+    bottom: 0px;
+  }
+  .bg-ellips {
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    background-color: #91afba;
+    filter: blur(90px);
+    z-index: 5;
+    opacity: 0.3;
+    border-radius: 50%;
+    bottom: 130px;
+    left: 190px;
   }
 }
