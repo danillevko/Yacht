@@ -30,3 +30,26 @@ const hamburgerBtn = document.getElementById('hamburgerBtn');
                 closeMenu();
             }
         });
+        let currentIndex = 0;
+const sliderList = document.getElementById('sliderList');
+const slides = document.querySelectorAll('.slider-list li');
+const totalSlides = slides.length;
+
+document.getElementById('next').addEventListener('click', () => {
+  if (currentIndex < totalSlides - 1) {
+    currentIndex++;
+    updateSlider();
+  }
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSlider();
+  }
+});
+
+function updateSlider() {
+  const slideWidth = slides[0].offsetWidth; 
+  sliderList.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
