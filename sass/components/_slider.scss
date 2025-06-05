@@ -102,18 +102,27 @@
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .slider-item {
-    width: 354px;
+    width: 344px;
   }
   .slider-list {
-    width: 354px;
+    width: 344px;
+    gap: 16px;
   }
-  .slider-img{
+  .slider-img {
     width: 312px;
     height: 268px;
     margin-top: 16px;
     margin-bottom: 32px;
   }
-  .yacht-name-wrapper{
+  .yacht-name-wrapper {
     margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .slider-img {
+    width: 322px;
+  }
+  .slider-list {
+    width: 1025px;
   }
 }

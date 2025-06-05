@@ -891,6 +891,32 @@
   align-items: center;
 }
 
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .slider-item {
+    width: 344px;
+  }
+  .slider-list {
+    width: 344px;
+    gap: 16px;
+  }
+  .slider-img {
+    width: 312px;
+    height: 268px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .yacht-name-wrapper {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .slider-img {
+    width: 322px;
+  }
+  .slider-list {
+    width: 1025px;
+  }
+}
 .logo-title, .header-link, .menu-item, .hero-title, .hero-paragraph, .hero-btn, .inner-title, .inner-price, .inner-span, .rent-title, .rent-list-paragraph, .rent-btn-title, .rent-btn, .rent-btn-title-desktop, .rent-btn-desktop, .yacht-name, .yacht-type, .yacht-qualities {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
