@@ -82,21 +82,38 @@
   align-items: left;
   text-align: left;
 }
-.slider-btn{
-    width: 46px;
-    height: 36px;
-    background-color: #11131f;
-    border: 1px white solid;
-    border-radius: 60px;
-    color: white;
-    align-items: center;
-    margin: 0 auto;
+.slider-btn {
+  width: 46px;
+  height: 36px;
+  background-color: #11131f;
+  border: 1px white solid;
+  border-radius: 60px;
+  color: white;
+  align-items: center;
+  margin: 0 auto;
 }
-.slider-btn:hover{
-    background-color: #1c1f33;
-    cursor: pointer;
+.slider-btn:hover {
+  background-color: #1c1f33;
+  cursor: pointer;
 }
-.slider-btn-wrapper{
-    margin: 0 auto;
-    align-items: center;
+.slider-btn-wrapper {
+  margin: 0 auto;
+  align-items: center;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .slider-item {
+    width: 354px;
+  }
+  .slider-list {
+    width: 354px;
+  }
+  .slider-img{
+    width: 312px;
+    height: 268px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .yacht-name-wrapper{
+    margin-bottom: 32px;
+  }
 }
