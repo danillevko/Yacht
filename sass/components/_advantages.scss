@@ -1,0 +1,77 @@
+.adventages {
+  background-color: #11131f;
+  padding-top: 80px;
+  padding-bottom: 56px;
+}
+.contaier-adventages {
+  position: relative;
+}
+.adventages-img {
+  width: 335px;
+  height: 335px;
+  margin-bottom: 24px;
+}
+.adventages-name {
+  max-width: 72px;
+  text-align: center;
+  height: 15px;
+  @extend %font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  color: #11131f;
+  background-color: white;
+  border-radius: 60px;
+  padding: 14px 28px;
+  margin: 0;
+  position: absolute;
+  z-index: 10;
+}
+.diving {
+  top: 274px;
+  left: 24px;
+}
+.fishing {
+  top: 633px;
+  left: 24px;
+}
+.sunbathing {
+  top: 992px;
+  left: 24px;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .adventages {
+    padding-top: 100px;
+    padding-bottom: 56px;
+    height: 1437px;
+  }
+  .contaier-adventages {
+    position: relative;
+  }
+  .adventages-img {
+    margin-bottom: 0px;
+    position: absolute;
+  }
+  .diving-img {
+    width: 704px;
+    height: 632px;
+    top: 0px;
+  }
+  .fishing-img {
+    width: 400px;
+    height: 389px;
+    top: 664px;
+    right: 0px;
+  }
+  .sunbathing-img{
+    width: 380px;
+    height: 352px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .adventages-name {
+    width: 92px;
+    height: 20px;
+    font-size: 18px;
+  }
+}
