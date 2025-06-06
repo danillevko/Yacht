@@ -41,37 +41,78 @@
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .adventages {
-    padding-top: 100px;
-    padding-bottom: 56px;
-    height: 1437px;
   }
   .contaier-adventages {
-    position: relative;
+    display: flex;
+    flex-direction: column;
   }
   .adventages-img {
-    margin-bottom: 0px;
-    position: absolute;
+    margin-bottom: 32px;
   }
   .diving-img {
     width: 704px;
     height: 632px;
-    top: 0px;
   }
   .fishing-img {
     width: 400px;
     height: 389px;
-    top: 664px;
-    right: 0px;
+    flex-direction: end;
+    text-align: right;
+    align-items: right;
+    margin-left: auto;
   }
-  .sunbathing-img{
+  .sunbathing-img {
     width: 380px;
     height: 352px;
-    bottom: 0px;
-    left: 0px;
   }
   .adventages-name {
-    width: 92px;
+    max-width: 148px;
     height: 20px;
     font-size: 18px;
+  }
+  .diving {
+    top: 552px;
+    left: 32px;
+  }
+  .fishing {
+    top: 973px;
+    left: 336px;
+  }
+  .sunbathing {
+    top: 1357px;
+    left: 32px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .adventages-img {
+    margin-bottom: 0;
+  }
+  .diving-img {
+    width: 712px;
+    height: 632px;
+    border-radius: 40px;
+  }
+  .fishing-img {
+    width: 440px;
+    height: 428px;
+    margin-left: auto;
+    margin-left: 60px;
+  }
+  .sunbathing-img {
+    width: 436px;
+    height: 352px;
+    margin: 64px 440px 0px 340px;
+  }
+  .diving {
+    top: 552px;
+    left: 32px;
+  }
+  .fishing {
+    top: 552px;
+    left: 808px;
+  }
+  .sunbathing {
+    top: 968px;
+    left: 372px;
   }
 }

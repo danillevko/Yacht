@@ -117,12 +117,15 @@
   .yacht-name-wrapper {
     margin-bottom: 32px;
   }
+  .yacht-qualities-item{
+    width: 200px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .slider-img {
     width: 322px;
   }
-  .slider-list {
-    width: 1025px;
+  .slider-list{
+    gap: 16px;
   }
 }
