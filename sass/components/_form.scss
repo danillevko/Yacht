@@ -166,14 +166,18 @@
     font-size: 18px;
   }
 }
+
 @media screen and (min-width: 1025px) {
-  .form{
+  .form {
     align-items: center;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
   .form-title {
     margin-bottom: 64px;
     width: 282px;
+    font-size: 60px;
+    height: 132px;
   }
   .form-img {
     width: 282px;
@@ -185,6 +189,11 @@
   .form-container {
     display: flex;
     gap: 168px;
+    width: 1216px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   .form-btn {
     width: 132px;
