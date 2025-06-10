@@ -1,7 +1,6 @@
 .footer {
   background-color: #11131f;
   padding-top: 40px;
-  padding-bottom: 14px;
 }
 .footer-logo-wrapper {
   margin-bottom: 40px;
@@ -24,6 +23,9 @@
   letter-spacing: 3%;
   color: white;
   text-transform: uppercase;
+}
+.footer-link :hover {
+  color: rgb(180, 180, 180);
 }
 .footer-social-wrapper {
   margin-bottom: 40px;
@@ -53,6 +55,8 @@
   gap: 14px;
   justify-content: center;
   width: 335px;
+  background-color: #11131f;
+  margin-bottom: 14px;
 }
 .policy {
   height: 14px;
@@ -63,4 +67,41 @@
   letter-spacing: 3%;
   color: white;
   opacity: 50%;
+  margin: 0;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer {
+    padding-bottom: 100px;
+  }
+  .policy {
+    height: 17px;
+    font-size: 14px;
+  }
+  .footer-link :hover {
+    color: rgb(180, 180, 180);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-item:hover {
+    color: rgb(180, 180, 180);
+  }
+  .footer {
+    padding-bottom: 186px;
+  }
+  .policy {
+    height: 17px;
+    font-size: 14px;
+  }
+  .footer-list {
+    display: flex;
+    gap: 24px;
+  }
 }
