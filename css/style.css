@@ -120,6 +120,80 @@
     left: 372px;
   }
 }
+.footer {
+  background-color: #11131f;
+  padding-top: 40px;
+  padding-bottom: 14px;
+}
+
+.footer-logo-wrapper {
+  margin-bottom: 40px;
+}
+
+.footer-list {
+  height: 79px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.footer-item {
+  margin-bottom: 14px;
+}
+
+.footer-link {
+  width: 64px;
+  height: 17px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 118%;
+  letter-spacing: 3%;
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer-social-wrapper {
+  margin-bottom: 40px;
+}
+
+.footer-social-title {
+  width: 95px;
+  height: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 110%;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.footer-social-item {
+  width: 32px;
+  height: 32px;
+}
+
+.policy-wrapper {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  width: 335px;
+}
+
+.policy {
+  height: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 118%;
+  letter-spacing: 3%;
+  color: white;
+  opacity: 50%;
+}
+
 .form {
   background-color: #11131f;
   text-align: left;
@@ -1264,7 +1338,7 @@
     gap: 16px;
   }
 }
-.adventages-name, .form-title, .form-label, .modal-title, .modal-paragraph, .logo-title, .header-link, .menu-item, .hero-title, .hero-paragraph, .hero-btn, .inner-title, .inner-price, .inner-span, .rent-title, .rent-list-paragraph, .rent-btn-title, .rent-btn, .rent-btn-title-desktop, .rent-btn-desktop, .yacht-name, .yacht-type, .yacht-qualities {
+.adventages-name, .footer-link, .footer-social-title, .policy, .form-title, .form-label, .modal-title, .modal-paragraph, .logo-title, .header-link, .menu-item, .hero-title, .hero-paragraph, .hero-btn, .inner-title, .inner-price, .inner-span, .rent-title, .rent-list-paragraph, .rent-btn-title, .rent-btn, .rent-btn-title-desktop, .rent-btn-desktop, .yacht-name, .yacht-type, .yacht-qualities {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
 }
