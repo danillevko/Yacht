@@ -109,3 +109,132 @@ document.addEventListener('DOMContentLoaded', function() {
     updateSlider();
     updateButtonStates();
 });
+
+
+//  const form = document.getElementById('bookingForm');
+//         const modal = document.getElementById('thanksModal');
+//         const loading = document.querySelector('.loading');
+//         const btnText = document.querySelector('.btn-text');
+//         const arrow = document.querySelector('.arrow');
+
+//         form.addEventListener('submit', function(e) {
+//             e.preventDefault();
+//             const inputs = form.querySelectorAll('input[required]');
+//             let isValid = true;
+            
+//             inputs.forEach(input => {
+//                 const group = input.closest('.form-group');
+//                 if (!input.value.trim()) {
+//                     group.classList.add('error');
+//                     isValid = false;
+//                 } else {
+//                     group.classList.remove('error');
+//                 }
+//             });
+            
+            
+//             if (isValid) {
+//                 loading.classList.add('show');
+//                 btnText.style.opacity = '0';
+//                 arrow.style.opacity = '0';
+//                 setTimeout(() => {
+//                     loading.classList.remove('show');
+//                     btnText.style.opacity = '1';
+//                     arrow.style.opacity = '1';
+//                     showModal();
+//                     form.reset();
+//                 }, 2000);
+//             }
+//         });
+
+//         function showModal() {
+//             const modal = document.getElementById('successModal');
+//             if (modal) {
+//                 modal.classList.add('show');
+//                 document.body.style.overflow = 'hidden';
+//             }
+//         }
+
+//         function closeModal() {
+//             const modal = document.getElementById('successModal');
+//             if (modal) {
+//                 modal.classList.remove('show');
+//                 document.body.style.overflow = 'auto';
+//             }
+//         }
+
+//         modal.addEventListener('click', function(e) {
+//             if (e.target === modal) {
+//                 closeModal();
+//             }
+//         });
+
+//         document.addEventListener('keydown', function(e) {
+//             if (e.key === 'Escape' && modal.classList.contains('show')) {
+//                 closeModal();
+//             }
+//         });
+//         document.querySelectorAll('input, textarea').forEach(input => {
+//             input.addEventListener('input', function() {
+//                 this.closest('.form-group').classList.remove('error');
+//             });
+//         });
+
+       
+const form = document.getElementById('bookingForm');
+        const modal = document.getElementById('thanksModal');
+        const loading = document.querySelector('.loading');
+        const btnText = document.querySelector('.btn-text');
+        const arrow = document.querySelector('.arrow');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const inputs = form.querySelectorAll('input[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                const group = input.closest('.form-group');
+                if (!input.value.trim()) {
+                    group.classList.add('error');
+                    isValid = false;
+                } else {
+                    group.classList.remove('error');
+                }
+            });
+           
+            
+            if (isValid) {
+                loading.classList.add('show');
+                btnText.style.opacity = '0';
+                arrow.style.opacity = '0';
+                setTimeout(() => {
+                    loading.classList.remove('show');
+                    btnText.style.opacity = '1';
+                    arrow.style.opacity = '1';
+                    showModal();
+                    form.reset();
+                }, 2000);
+            }
+        });
+
+        function showModal() {
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('show')) {
+                closeModal();
+            }
+        });

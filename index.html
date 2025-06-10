@@ -392,11 +392,62 @@
                         <h4 class="adventages-name sunbathing">Sunbathing</h4>
                     </div>
                 </section>
+                <section class="form">
+                    <div class="container form-container">
+                        <div class="form-title-wrapper">
+                            <h2 class="form-title">Rent a yacht now</h2>
+                            <img src="./img/form-img.png" alt="" class="form-img">
+                        </div>
+                        <div class="form-section">
+                            <form id="bookingForm">
+                                <div class="form-group">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" id="fullName" name="fullName" required class="form-text">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-text" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-text" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="comment" class="form-label">Comment</label>
+                                    <textarea id="comment" name="comment" rows="4" class="form-text comment"></textarea>
+                                </div>
+
+                                <button type="submit" class="form-btn">
+                                    <span class="btn-text">Send</span>
+                                    <span class="loading"></span>
+                                    <span class="arrow">→</span>
+                                </button>
+                            </form>
+                        </div>
+                </section>
             </main>
         </div>
     </div>
 
-
+    <!-- MODAL -->
+    <div id="thanksModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">
+                &times;
+            </button>
+            <img src="./img/modal-img.png" alt="" class="modal-img">
+            <h2 class="modal-title">Thank you</h2>
+            <p class="modal-paragraph">Thank you for choosing Yacht Adventures, your booking details have been received
+                and
+                our team will be in
+                touch shortly to confirm your reservation and provide any additional information or assistance you may
+                need.
+            </p>
+        </div>
+    </div>
     <!-- BURGERMENU -->
 
     <div class="container">
