@@ -275,10 +275,6 @@ getVisibleSlides() {
             dot.addEventListener('click', () => this.goToSlide(index));
         });
         this.addTouchSupport();
-        this.startAutoSlide();
-        
-        this.container.addEventListener('mouseenter', () => this.stopAutoSlide());
-        this.container.addEventListener('mouseleave', () => this.startAutoSlide());
     }
     
     goToSlide(slideIndex) {
@@ -302,39 +298,26 @@ getVisibleSlides() {
         this.restartAutoSlide();
     }
     
-    updateSlider1() {
-    const translateX = -(this.currentSlide * (100 / this.visibleSlides));
-    this.container.style.transform = `translateX(${translateX}%)`;
+ updateSlider1() {
+    const items = this.container.querySelectorAll('.recalls-slider-item');
+    const gap = 14;
+    const itemWidth = items[0].offsetWidth;
 
-    this.progressBars.forEach((bar, index) => {
-        bar.style.animation = 'none';
-        if (index === this.currentSlide) {
-            setTimeout(() => {
-                bar.style.animation = `slideProgress ${this.slideInterval}ms linear`;
-            }, 50);
-        }
-    });
+    items.forEach(item => item.classList.remove('no-gap'));
+
+    items[items.length - 1].classList.add('no-gap');
+
+    const translateX = -(this.currentSlide * (itemWidth + gap));
+    this.container.style.transform = `translateX(${translateX}px)`;
 }
 
-    
     updateDots() {
         this.dots.forEach((dot, index) => {
             dot.classList.toggle('active', index === this.currentSlide);
         });
     }
     
-    startAutoSlide() {
-        this.stopAutoSlide();
-        this.autoSlideInterval = setInterval(() => {
-            this.nextSlide();
-        }, this.slideInterval);
-    }
-    
-    stopAutoSlide() {
-        if (this.autoSlideInterval) {
-            clearInterval(this.autoSlideInterval);
-        }
-    }
+   
     
     restartAutoSlide() {
         this.stopAutoSlide();
